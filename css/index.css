@@ -160,9 +160,22 @@ p {
   width: 70%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 90%;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 body {
   width: 96%;
   margin: 0 2%;
+}
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+    margin: auto;
+  }
 }
 nav {
   display: flex;
@@ -210,9 +223,19 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
-@media (@media: 500px) {
-  .home .space-images {
+@media (max-width: 500px) {
+  .home .space-images .launch {
     display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
   }
 }
 .home img {
@@ -237,8 +260,34 @@ footer {
   display: flex;
   justify-content: center;
 }
+.walk .walk-img-phone {
+  display: none;
+}
+@media (max-width: 500px) {
+  .walk .walk-img-phone {
+    display: flex;
+    width: 120%;
+    margin: 2px 4%;
+  }
+}
+@media (max-width: 500px) {
+  .walk {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+}
 .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .walk .walk-text {
+    width: 96%;
+    margin: 2px 2%;
+  }
+}
+.walk .walk-text .walk-img-phone {
+  display: hide;
 }
 .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -254,6 +303,21 @@ footer {
   width: fit-content;
   padding: 5px 20px;
 }
+@media (max-width: 500px) {
+  .walk .walk-text .btn {
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 500px) {
+  .walk .walk-text .btn {
+    justify-content: center;
+  }
+}
 .walk .walk-text .btn:hover {
   background: palevioletred;
   color: blue;
@@ -261,6 +325,11 @@ footer {
 .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .walk .walk-img {
+    display: none;
+  }
 }
 .walk .walk-img img {
   width: 100%;
