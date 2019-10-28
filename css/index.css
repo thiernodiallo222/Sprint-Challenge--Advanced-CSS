@@ -1,0 +1,338 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 70%;
+  width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 90%;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+body {
+  width: 96%;
+  margin: 0 2%;
+}
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+    margin: auto;
+  }
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+nav a {
+  margin: 11px;
+  text-decoration: none;
+  padding: 5px 0;
+  color: gray;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-title {
+  text-align: center;
+  font-size: 5rem;
+  padding: 5px 0;
+}
+.home .intro .top-image {
+  display: flex;
+  width: 97%;
+  justify-content: center;
+  margin: auto;
+  border-radius: 10px;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
+.home img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+.visit-planets {
+  padding: 15px;
+}
+.visit-planets h3 {
+  margin-top: 11px;
+}
+.visit-planets p {
+  margin-top: 13px;
+}
+.walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.walk .walk-img-phone {
+  display: none;
+}
+@media (max-width: 500px) {
+  .walk .walk-img-phone {
+    display: flex;
+    width: 120%;
+    margin: 2px 4%;
+  }
+}
+@media (max-width: 500px) {
+  .walk {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.walk .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .walk .walk-text {
+    width: 96%;
+    margin: 2px 2%;
+  }
+}
+.walk .walk-text .walk-img-phone {
+  display: hide;
+}
+.walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.walk .walk-text p {
+  margin-bottom: 26px;
+}
+.walk .walk-text .btn {
+  background: black;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5rem;
+  width: fit-content;
+  padding: 5px 20px;
+}
+@media (max-width: 500px) {
+  .walk .walk-text .btn {
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 500px) {
+  .walk .walk-text .btn {
+    justify-content: center;
+  }
+}
+.walk .walk-text .btn:hover {
+  background: palevioletred;
+  color: blue;
+}
+.walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .walk .walk-img {
+    display: none;
+  }
+}
+.walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}

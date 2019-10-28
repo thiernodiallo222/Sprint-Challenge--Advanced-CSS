@@ -1,1 +1,26 @@
 // Mixins Here
+.flex-display(@flex, @justify-content, @align-items){
+display: @flex;
+justify-content: @justify-content;
+align-items: @align-items;
+font-size: 1.5rem;
+}
+
+.btn-style(@bg, @color){
+    background: @bg;
+    border-radius: 5px;
+    color: @color;
+    font-size: 1.5rem;
+    width: fit-content;
+    padding: 5px 20px;
+
+    @media @mobile {
+        justify-content: center;
+        align-content: center;
+        width:90%;
+        margin: auto;
+        text-align: center;
+        padding: 10px 30px;
+
+    }
+    }
